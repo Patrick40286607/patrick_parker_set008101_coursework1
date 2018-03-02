@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>The Second Cipher</title>
+	<link rel ="stylesheet" href="styles/design.css">
+	<script type="text/javascript" src = "scripts/cipher_reverse.js"></script>
+</head>
+
+<body>
+	<header>
+			<nav>
+				<h1>Cipher Coursework</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="caesar_cipher.html">Caesar Cipher</a></li>
+					<li><a href="#">Reverse Cipher</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<p>This cipher is one which the order of the letters in the alphabet are reversed. So "A" would be swapped for "Z" and so on.</p>
+
+	<h1>Enter the message you wish to be reversed below: </h1>
+
+	<div id = "input area">
+	<textarea rows="1" cols="50" autofocus id="mreverse"></textarea>
+	<br />
+	</div>
+
+	<div id = "functions">
+	<button type ="button" onclick="reverse()" id="button_reverse">Reverse Text</button>
+	<button type ="button" onclick="standard()" id="button_standard">I cant read that</button>
+	</div>
+
+	<div id ="output">
+		<p>I hope you can read backwards: </p> <br />
+		<p id="revresult"></p>
+	</div>
+
+
+
+	<footer>&#169 2018 40286607 </footer>
+</body>

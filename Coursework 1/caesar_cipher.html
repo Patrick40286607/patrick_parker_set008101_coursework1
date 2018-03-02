@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>The First Cipher</title>
+	<link rel ="stylesheet" href="styles/design.css">
+	<script type="text/javascript" src="scripts/ceasar.js"></script>
+</head>
+
+<body>
+
+	<header>
+			<nav>
+				<h1>The Ceasar Cipher</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Caesar Cipher</a></li>
+					<li><a href="reverse_cipher.html">Reverse Cipher</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<p>The Caesar cipher is named after Julius Caesar, who, according to Suetonius, used it with a shift of three to protect messages of military significance. While Caesar's was the first recorded use of this scheme, other substitution ciphers are known to have been used earlier</p>
+
+	<h2>Enter your message below</h2>
+
+	<div id ="cipher_input">
+		<textarea rows="1" cols="50" autofocus id="message"></textarea>
+	</div>
+	
+	<div class = "buttons">
+		<div id ="cipher_selector">
+			<textarea rows="1" cols="1" autofocus id="shift">3</textarea>
+			<button type="button" onclick="encrypt()" id="encrypt_button">Get your cipher on</button>
+			<button type="button" onclick="decrypt()" id="decrypt_button">A Message from Caesar</button>
+		</div>
+	</div>
+
+
+	<div id="cipher_output">
+		<p>
+	    Hail Caesar you've done it:<br />
+		<p id="result"></p>
+		</p>
+	</div>
+
+
+	<footer>&#169 2018 40286607 </footer>
+</body>
+
+</html>
